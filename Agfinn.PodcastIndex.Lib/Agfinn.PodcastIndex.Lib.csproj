@@ -6,6 +6,10 @@
     <Copyright>Elias Puurunen</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>pci_avatar.jpg</PackageIcon>
+    <PackageId>podcastindex-csharp</PackageId>
+    <PackageProjectUrl>https://github.com/eliaspuurunen/podcastindex-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/eliaspuurunen/podcastindex-csharp</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
