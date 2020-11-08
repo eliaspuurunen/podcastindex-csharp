@@ -4,6 +4,10 @@ This is a simple wrapper around the [Podcast Index](https://podcastindex-org.git
 
 Currently only supports GET operations.
 
+## Nuget Package
+
+[Nuget Package](https://www.nuget.org/packages/podcastindex-csharp)
+
 ## Usage
 
 ```csharp
