@@ -394,6 +394,55 @@ namespace Agfinn.PodcastIndex.Lib
             }
         }
 
+        /// <summary>
+        /// Attempts to add a podcast feed by its RSS URL. Requires a Read/Write key.
+        /// </summary>
+        /// <param name="url">The URL of the podcast feed.</param>
+        /// <returns>Returns the new ID, if the podcast doesn't exist.</returns>
+        public async Task<AddFeedResponse> AddFeedByUrl(string url)
+        {
+            var request = this.PrepareRequest("/api/1.0/add/byfeedurl", Method.POST);
+
+            request.AddQueryParameter("url", url, false);
+
+            var response = await this.RestClient.PostAsync<AddFeedResponse>(request);
+
+            try
+            {
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        /// <summary>
+        /// Attempts to add a podcast feed by its iTunes ID. Requires a Read/Write key.
+        /// </summary>
+        /// <param name="url">The iTunes ID of the podcast feed.</param>
+        /// <returns>Returns the new ID, if the podcast doesn't exist.</returns>
+        public async Task<AddFeedResponse> AddFeedByITunesId(int id)
+        {
+            var request = this.PrepareRequest("/api/1.0/add/byitunesid", Method.POST);
+
+            request.AddQueryParameter("id", id.ToString());
+
+            var response = await this.RestClient.PostAsync<AddFeedResponse>(request);
+
+            try
+            {
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+
         private RestClient GetRestClient()
         {
             var toReturn = new RestClient(PODCAST_INDEX_BASE_URI);

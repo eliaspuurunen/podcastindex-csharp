@@ -2,7 +2,7 @@
 
 This is a simple wrapper around the [Podcast Index](https://podcastindex-org.github.io/docs-api/) API. Targets .NET Standard 2.0.
 
-Currently only supports GET operations.
+Supports both read-only operations & read-write. Read-Write requires a RW key from Podcast Index.
 
 ## Nuget Package
 

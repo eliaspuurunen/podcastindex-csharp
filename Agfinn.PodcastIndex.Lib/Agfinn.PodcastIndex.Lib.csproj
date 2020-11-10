@@ -10,6 +10,8 @@
     <PackageProjectUrl>https://github.com/eliaspuurunen/podcastindex-csharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/eliaspuurunen/podcastindex-csharp</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Added read/write routes for adding podcasts.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
